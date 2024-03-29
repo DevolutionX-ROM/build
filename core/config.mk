@@ -451,7 +451,7 @@ endif
 FIND_LEAVES_EXCLUDES := $(addprefix --prune=, $(SCAN_EXCLUDE_DIRS) .repo .git)
 
 ifneq ($(EVOLUTION_BUILD),)
-include vendor/evolution/config/BoardConfig.mk
+include vendor/devolution/config/BoardConfig.mk
 endif
 
 # The build system exposes several variables for where to find the kernel
@@ -1330,7 +1330,7 @@ DEFAULT_DATA_OUT_MODULES := ltp $(ltp_packages)
 .KATI_READONLY := DEFAULT_DATA_OUT_MODULES
 
 # Include any vendor specific config.mk file
--include vendor/evolution/build/core/config.mk
+-include vendor/devolution/build/core/config.mk
 
 include $(BUILD_SYSTEM)/dumpvar.mk
 
